@@ -11,13 +11,25 @@ import UIKit
 class SecondViewController: UIViewController
 {
     @IBOutlet weak var myImageView: UIImageView!
+    var character = ""
+    override func viewDidLoad()
     
-    override func viewDidLoad() {
+    {
         super.viewDidLoad()
-
+customizeviews()
         // Do any additional setup after loading the view.
     }
-    
+    func customizeviews()
+    {
+        if character == "AndrewsCrib"
+        {
+            myImageView.image = #imageLiteral(resourceName: "AndrewsCrib")
+        }
+        else if character == "AidansCrib"
+        {
+            myImageView.image = #imageLiteral(resourceName: "AidansCrib")
+        }
+    }
     
 
     /*
