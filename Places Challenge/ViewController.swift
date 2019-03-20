@@ -33,6 +33,13 @@ class ViewController: UIViewController
         if segue.identifier == "andrewSegue"
         {
             let newvc = segue.destination as! SecondViewController
+            newvc.myImageView.image = UIImage (named:"AndrewsCrib")
+        }
+        
+        else if segue.identifier == "aidanSegue"
+        {
+            let newvc = segue.destination as! SecondViewController
+            newvc.myImageView.image = UIImage(named: "AidansCrib")
             
         }
     }

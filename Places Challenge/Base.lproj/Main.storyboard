@@ -48,26 +48,29 @@
             </objects>
             <point key="canvasLocation" x="943" y="77"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="a95-Ca-gB8">
             <objects>
-                <viewController id="rZz-tJ-HMM" sceneMemberID="viewController">
+                <viewController id="rZz-tJ-HMM" customClass="SecondViewController" customModule="Places_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Vc-Fc-iUz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I7g-yQ-jgD">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="25" y="77" width="325" height="513"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Gxc-LP-91a"/>
                     </view>
+                    <connections>
+                        <outlet property="myImageView" destination="I7g-yQ-jgD" id="gl4-XW-iSR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nnb-nY-WRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860" y="293"/>
+            <point key="canvasLocation" x="1860" y="292.80359820089956"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wtw-Tt-7rb">
@@ -89,6 +92,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iE2-nu-Iug"/>
+        <segue reference="yfS-U8-JIL"/>
     </inferredMetricsTieBreakers>
 </document>
