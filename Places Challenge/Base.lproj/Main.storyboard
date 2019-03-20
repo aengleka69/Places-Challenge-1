@@ -22,11 +22,17 @@
                                 <rect key="frame" x="77" y="122" width="220" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Andrew's Crib"/>
+                                <connections>
+                                    <action selector="andrewsCribTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="npd-6a-ErF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQY-ZJ-xpf">
                                 <rect key="frame" x="77" y="380" width="220" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Aidan's Crib"/>
+                                <connections>
+                                    <action selector="aidansCribTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ad-xE-TTo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -34,12 +40,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="xbw-oi-YD6"/>
                     <connections>
-                        <segue destination="rZz-tJ-HMM" kind="show" id="yfS-U8-JIL"/>
+                        <segue destination="rZz-tJ-HMM" kind="show" identifier="andrewSegue" id="yfS-U8-JIL"/>
+                        <segue destination="rZz-tJ-HMM" kind="show" identifier="aidanSegue" id="iE2-nu-Iug"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="128.18590704647679"/>
+            <point key="canvasLocation" x="943" y="77"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="a95-Ca-gB8">
@@ -60,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nnb-nY-WRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1740" y="127.28635682158921"/>
+            <point key="canvasLocation" x="1860" y="293"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wtw-Tt-7rb">
@@ -78,7 +85,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EqF-fT-oof" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71.200000000000003" y="787.55622188905556"/>
+            <point key="canvasLocation" x="190" y="127"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="iE2-nu-Iug"/>
+    </inferredMetricsTieBreakers>
 </document>
