@@ -28,6 +28,13 @@ class ViewController: UIViewController
         performSegue(withIdentifier: "aidanSegue", sender: self)
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "andrewSegue"
+        {
+            let newvc = segue.destination as! SecondViewController
+            
+        }
+    }
 }
 
