@@ -12,12 +12,19 @@ class SecondViewController: UIViewController
 {
     @IBOutlet weak var myImageView: UIImageView!
     var character = ""
+    
+    var image: UIImage = #imageLiteral(resourceName: "AidansCrib")
     override func viewDidLoad()
     
     {
         super.viewDidLoad()
-customizeviews()
+//customizeviews()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        myImageView.image = image
+        customizeviews()
     }
     func customizeviews()
     {
